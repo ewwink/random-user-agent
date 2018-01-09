@@ -14,7 +14,7 @@ class UserAgent:
 			webkit = str(random.randint(500, 599))
 			version = "%s.0%s.%s"%(str(random.randint(0, 24)), str(random.randint(0, 1500)), str(random.randint(0, 999)))
 
-			return "Mozilla/5.0 (%s) AppleWebKit/%s.0 (KHTML, live Gecko) Chrome/%s Safari/%s"%(self.agent['os'], webkit, version, webkit)
+			return "Mozilla/5.0 (%s) AppleWebKit/%s.0 (KHTML, like Gecko) Chrome/%s Safari/%s"%(self.agent['os'], webkit, version, webkit)
 		elif self.agent['browser'] == 'Firefox':
 			year = str(random.randint(2000, 2015))
 			month = str(random.randint(1, 12)).zfill(2)
