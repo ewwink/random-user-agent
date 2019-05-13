@@ -48,6 +48,4 @@ class UserAgent:
 	def get_platform(self):
 		self.agent['platform'] = random.choice(['Machintosh', 'Windows', 'X11'])
 
-ua = UserAgent()
 
-print ua.random()
